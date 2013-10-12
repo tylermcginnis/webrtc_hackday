@@ -11,7 +11,7 @@ http.createServer(function (request, response) {
     case 'GET':
       if(path === '/'){
         response.writeHead(200,{'Content-Type':'text/html'});
-        response.end(fs.readFileSync(__dirname+'/hackday.html'));
+        response.end(fs.readFileSync(__dirname+'/step2.html'));
       }
       break;
     default:
